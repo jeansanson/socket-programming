@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
   struct sockaddr_in server;
   char *message, server_reply[REPLY_LENGTH];
 
-  // AF_INET - IPv4, SOCK_STREAM - tcp, 0 - IP
+  // AF_INET: IPv4, SOCK_STREAM: tcp, 0: IP
   socket_desc = socket(AF_INET, SOCK_STREAM, 0);
   server.sin_addr.s_addr = inet_addr("172.217.28.132");
   server.sin_family = AF_INET;
