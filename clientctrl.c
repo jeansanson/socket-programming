@@ -1,4 +1,4 @@
-#include "clientCtrl.h"
+#include "clientctrl.h"
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <stdio.h>
@@ -17,6 +17,7 @@ int sendMessage(char *message, int socket_desc) {
   printf("Package: sent\n");
 
   char server_reply[REPLY_LENGTH];
+
   if (recv(socket_desc, server_reply, REPLY_LENGTH, 0) < 0) {
     printf("Reply: error\n");
     return 1;

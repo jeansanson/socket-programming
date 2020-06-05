@@ -1,4 +1,4 @@
-#include "clientCtrl.h"
+#include "clientctrl.h"
 #include <arpa/inet.h>
 #include <stdio.h>
 #include <string.h>
@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 
     sendMessage(message, socket_desc);
 
-  } while (strcmp(message, "exit")!=0);
+  } while (strcmp(message, "exit") != 0);
 
   return 0;
 }
